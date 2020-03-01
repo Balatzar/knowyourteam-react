@@ -2,18 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.bio-card {
+.bio-card,
+.game-card {
   position: absolute;
   right: -100vw;
   left: 100vw;
-}
-
-.game-card {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
 }
 
 .show-card {

@@ -3,6 +3,7 @@ import React, { useEffect, useReducer } from "react";
 import { fetchPeople } from "./services/airtable";
 
 import MainLoaderFullScreen from "./base/MainLoaderFullScreen";
+import Footer from "./base/Footer";
 
 import GameStats from "./components/GameStats";
 import EndScreen from "./components/EndScreen";
@@ -44,6 +45,7 @@ function App() {
           passBio={() => dispatch({ type: PASS_BIO })}
         />
       )}
+      <Footer />
     </div>
   );
 }

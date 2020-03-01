@@ -4,12 +4,12 @@ export default function EndScreen({ rounds }) {
   return (
     <div>
       <h1 className="text-center text-boldest text-6xl">Finished!</h1>
-      <h2 className="text-center text-bolder text-4xl">
+      <h2 className="text-center text-bolder text-4xl underline">
         {rounds.reduce((acc, r) => {
           if (r.win) acc += 1;
           return acc;
         }, 0)}{" "}
-        wins |{" "}
+        wins -{" "}
         {rounds.reduce((acc, r) => {
           if (!r.win) acc += 1;
           return acc;

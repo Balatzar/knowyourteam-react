@@ -6,8 +6,10 @@ export default function BioCard({ showBio, passBio, round }) {
   useEffect(() => {
     if (showBio) {
       document.querySelector(".bio-card").classList.add("show-card");
+      document.querySelector(".bio-card").classList.remove("hide-card");
     } else {
       document.querySelector(".bio-card").classList.remove("show-card");
+      document.querySelector(".bio-card").classList.add("hide-card");
     }
   }, [showBio]);
 
@@ -50,7 +52,7 @@ export default function BioCard({ showBio, passBio, round }) {
           </div>
         </div>
       </div>
-      <p className="mt-4 h-64 overflow-scroll">{round.person["Biography"]}</p>
+      <p className="mt-6 h-64 overflow-scroll">{round.person["Biography"]}</p>
     </div>
   );
 }

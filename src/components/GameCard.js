@@ -5,8 +5,10 @@ export default function GameCard({ currentPerson, names, answer, showBio }) {
   useEffect(() => {
     if (showBio) {
       document.querySelector(".game-card").classList.add("hide-card");
+      document.querySelector(".game-card").classList.remove("show-card");
     } else {
       document.querySelector(".game-card").classList.remove("hide-card");
+      document.querySelector(".game-card").classList.add("show-card");
     }
   }, [showBio]);
 
@@ -22,7 +24,7 @@ export default function GameCard({ currentPerson, names, answer, showBio }) {
       <div className="flex flex-col p-4">
         {shuffle(names).map((name, i) => (
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2"
+            className="bg-purple-700 hover:bg-purple-500 text-white font-bold py-2 px-4 rounded m-2"
             key={i}
             onClick={() => answer(name)}
           >
