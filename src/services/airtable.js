@@ -4,7 +4,6 @@ import uniq from "lodash.uniq";
 import flatten from "lodash.flatten";
 
 const fetchPeople = callBack => {
-  console.log(process.env.REACT_APP_PUBLIC_READONLY_AIRTABLE_KEY);
   var base = new Airtable({
     apiKey: process.env.REACT_APP_PUBLIC_READONLY_AIRTABLE_KEY,
   }).base("appKseGI0eXLlGvr1");

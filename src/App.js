@@ -26,8 +26,6 @@ function App() {
     fetchPeople(people => dispatch({ type: LOAD_PEOPLE, people }));
   }, []);
 
-  console.log("gameState: ", gameState);
-
   if (gameState.phase === LOADING_PHASE) {
     return <MainLoaderFullScreen />;
   }
