@@ -5,7 +5,7 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-  <div className="bg-gray-200 w-screen h-screen border-black border-double border-8 fixed overflow-x-auto">
+  <div className="bg-gray-200 w-screen h-screen border-black border-double border-8 fixed overflow-hidden">
     <App />
   </div>,
   document.getElementById("root")
