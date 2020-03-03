@@ -13,6 +13,10 @@ export default function BioCard({ showBio, passBio, round }) {
     }
   }, [showBio]);
 
+  useEffect(() => {
+    document.querySelector(".js-description").scrollTop = 0;
+  });
+
   return (
     <div className="bio-card w-3/4 max-w-md rounded-lg bg-white overflow-hidden4 border p-6">
       <div className="absolute h-screen right-0 w-2/12 inset-y-0 flex -mr-12 md:-mr-24 lg:-mr-32">
@@ -52,7 +56,9 @@ export default function BioCard({ showBio, passBio, round }) {
           </div>
         </div>
       </div>
-      <p className="mt-6 h-64 overflow-scroll">{round.person["Biography"]}</p>
+      <p className="mt-6 h-64 overflow-scroll js-description">
+        {round.person["Biography"]}
+      </p>
     </div>
   );
 }
