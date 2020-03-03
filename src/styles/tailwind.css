@@ -13423,6 +13423,12 @@ video {
           transform: translateX(-50%) translateY(-50%) scale(0.9);
 }
 
+@media (max-width: 800px) {
+  .arrow {
+    width: 40px;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;

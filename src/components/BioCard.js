@@ -20,7 +20,11 @@ export default function BioCard({ showBio, passBio, round }) {
   return (
     <div className="bio-card w-3/4 max-w-md rounded-lg bg-white overflow-hidden4 border p-6">
       <div className="absolute h-screen right-0 w-2/12 inset-y-0 flex -mr-12 md:-mr-24 lg:-mr-32">
-        <button className="-ml-2 min-w-4/12" onClick={passBio}>
+        <button
+          className="-ml-2"
+          style={{ minWidth: "80px" }}
+          onClick={passBio}
+        >
           <div className="arrow">
             <div className="arrow-top"></div>
             <div className="arrow-bottom"></div>
@@ -56,7 +60,7 @@ export default function BioCard({ showBio, passBio, round }) {
           </div>
         </div>
       </div>
-      <p className="mt-6 h-64 overflow-scroll js-description">
+      <p className="mt-6 h-64 overflow-y-scroll js-description">
         {round.person["Biography"]}
       </p>
     </div>
