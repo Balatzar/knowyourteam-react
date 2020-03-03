@@ -13429,6 +13429,10 @@ video {
   }
 }
 
+.markdown p {
+  margin-bottom: 5px;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;

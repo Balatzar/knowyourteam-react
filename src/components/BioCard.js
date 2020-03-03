@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import ReactMarkdown from "react-markdown";
 
 const colors = ["teal", "pink", "purple", "indigo", "blue"];
 
@@ -60,9 +61,12 @@ export default function BioCard({ showBio, passBio, round }) {
           </div>
         </div>
       </div>
-      <p className="mt-6 h-64 overflow-y-scroll js-description">
-        {round.person["Biography"]}
-      </p>
+      <div className="mt-6 h-64 overflow-y-scroll js-description">
+        <ReactMarkdown
+          className="markdown"
+          source={round.person["Biography"]}
+        />
+      </div>
     </div>
   );
 }
