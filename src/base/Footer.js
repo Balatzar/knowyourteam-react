@@ -15,7 +15,7 @@ function Link({ link, text }) {
 
 export default function Footer() {
   return (
-    <div className="fixed bottom-0 left-0 m-6">
+    <div className="fixed bottom-0 mb-1 w-screen p-2">
       <div className="flex justify-center">
         <span className="border-black border-4 border-solid p-1 uppercase font-black text-2xl">
           Know Your Team
