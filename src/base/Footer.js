@@ -27,6 +27,10 @@ export default function Footer() {
           link="https://github.com/Balatzar"
         />
         <Link
+          text="see the code"
+          link="https://github.com/Balatzar/knowyourteam"
+        />
+        <Link
           text="submit a bug"
           link="https://airtable.com/tblJquHUujO27Yrt1/viw5sp6PXcD2Zix6o?blocks=hide"
         />
