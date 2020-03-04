@@ -15,7 +15,7 @@ export default function BioCard({ showBio, passBio, round }) {
   }, [showBio]);
 
   useEffect(() => {
-    document.querySelector(".js-description").scrollTop = 0;
+    // document.querySelector(".js-description").scrollTop = 0;
   });
 
   return (
@@ -43,29 +43,7 @@ export default function BioCard({ showBio, passBio, round }) {
         />
         <div className="ml-4">
           <h2 className="text-2xl text-bold">{round.person["Name"]}</h2>
-          <h3 className="text-xl underline">
-            {round.person["Job Description"]}
-          </h3>
-          <div className="">
-            {round.person["Projects"].map(({ Name: name }, i) => {
-              const color = colors[i % colors.length];
-              return (
-                <span
-                  key={i}
-                  className={`inline-block text-xs bg-${color}-200 text-${color}-800 rounded-full px-2`}
-                >
-                  {name}
-                </span>
-              );
-            })}
-          </div>
         </div>
-      </div>
-      <div className="mt-6 h-64 overflow-y-scroll js-description">
-        <ReactMarkdown
-          className="markdown"
-          source={round.person["Biography"]}
-        />
       </div>
     </div>
   );

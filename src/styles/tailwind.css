@@ -13423,13 +13423,13 @@ video {
           transform: translateX(-50%) translateY(-50%) scale(0.9);
 }
 
+.footer-logo {
+  font-size: 1rem;
+}
+
 @media (max-width: 800px) {
   .arrow {
     width: 40px;
-  }
-
-  .footer-logo {
-    font-size: 1rem;
   }
 }
 
