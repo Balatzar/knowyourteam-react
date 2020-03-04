@@ -13427,6 +13427,10 @@ video {
   .arrow {
     width: 40px;
   }
+
+  .footer-logo {
+    font-size: 1rem;
+  }
 }
 
 .markdown p {
